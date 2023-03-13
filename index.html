@@ -6,20 +6,60 @@
     <title>Lebe Dein Satnam</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   	<style type="text/css">
-  		#intro {
-  			background-image: url("Logo_Icon+Typo_magenta.png");
+      .xxl {
+        max-width: 1320px;
+        background-color: white;
+        margin: auto;
+      }
+      nav {
+        width:100%;
+        background-image: url("background.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+      }
+      .nav-link {
+        color: white;
+      }
+      .nav-link.active {
+        color: white;
+        text-decoration: underline;
+      }
 
+  		#intro, #motivation, section div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #intro{
+        color:white;
+  			background-image: url("earth.jpg");
 			  /* Full height */
-			  height: 100vh;
-			  /*max-height:  1000px;*/
-			  /*width: 100vw;*/
-			  /*max-width: 2000px;*/
-
+			  /*height: 100vh;*/
 			  /* Center and scale the image nicely */
 			  background-position: center;
 			  background-repeat: no-repeat;
-			  background-size: contain;
+			  background-size: cover;
+        padding: 10rem 0;
   		}
+
+      #intro *, #motivation * {
+        text-align: center;
+        margin: 1rem 4rem;
+
+      }
+
+      #intro img {
+        /*height: 5rem;*/
+        width: 15rem;
+      }
+
+      #video {
+        width: 25rem;
+      }
 
   		body{
   			background-color: lightgray;
@@ -33,15 +73,37 @@
   		#brand{
   			width: 100px;
   		}
+
+      .section-img{
+        width:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;       
+      }
+
+      .color-section {
+        background-image: url("background.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1rem;
+        color: white;
+      }
+
+      section div button {
+        border-radius: 10px;
+        color: white;
+        background-color: lightgray;
+        padding: .5rem;
+      }
   	</style>
   </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
-<div class="container-xxl">
-  <a class="row" id="intro" href="#coaching"></a>
-	<nav id="navbar" class="row navbar navbar-expand-lg bg-light sticky-top">
+<div class="xxl">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">  
 	 <div class="container-fluid">
-	    <a href="#"><img id="brand" src="logo-black.png" alt="Satnam"></a>
+	    <a href="#"><img id="brand" src="Logo_Icon_weiss.png" alt="Satnam"></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-list" aria-controls="navbar-list" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -53,9 +115,6 @@
 	        <li class="nav-item">
 	          <a class="nav-link" href="#yoga">Yoga</a>
 	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#breathwalk">Breathwalk</a>
-	        </li>
           <li class="nav-item">
             <a class="nav-link" href="#meditation">Meditation</a>
           </li>
@@ -63,115 +122,76 @@
 	          <a class="nav-link" href="#aufrichtung">Aufrichtung</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#about">Über</a>
+	          <a class="nav-link" href="#about">Über mich</a>
 	        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">Aktuelles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
 	      </ul>
 	    </div>
 	   </div>
 	 </nav>
 
+
+  <div class="" id="intro">
+    <img src="Logo_Icon_weiss.png">
+    <h1>COACHING & BODYWORK </h1>
+    <h2>Light your Life</h2>    
+  </div>  
   <main>
 
-  <div id="coaching">
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row align-items-center g-5 py-5">
-        <div class="col-12">
-          <h2 class="display-5 fw-bold lh-1 mb-3">Coaching</h2>
-          <h3 class="text-muted fw-bold lh-2 mb-3">Körperarbeit und Emotional Release</h3>
-          <img src="Kundalini-Yoga.JPG" class="d-block mx-auto img-fluid" loading="lazy">
-          <p class="lead mt-3">
-            Ich lade Sie ein auf eine Reise zu sich selbst, um Klarheit, Erleichterung, Bewusstsein und Heilung zu finden. Alles liegt in Ihnen, auch wenn der Weg vielleicht gerade für Sie nicht sichtbar ist.<br>
-            In meiner Coaching-Arbeit begleite ich Sie dabei, Ihr volles Potential zu entfalten und zu leben. Dafür nutze ich Methoden aus verschiedenen Traditionen. <br>
-            Ich freue mich sehr auf Sie!
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">zum Angebot</button>
-          </div>
-        </div>
-      </div>
+  <section class="" id="motivation">
+    <h3>Du bist wertvoll!</h3>
+    <h4>Lebe deine Bestimmung - Lebe dein Satnam</h4>
+    <p>Die feinste Essenz an Methoden wartet darauf, Dich zum LEUCHTEN & in DIE
+FREUDE zu bringen – Dich zu befreien von allem was nicht zu Dir gehört!
+Ich freue mich schon jetzt riesig darauf, Dich auf Deiner Reise zu Dir selbst, zu
+Deiner wahren Essenz – zu Deinem SATNAM zu begleiten.</p>
+    <p>SATNAM (Sanskr.) – wahre Bestimmung.</p>
+    <img id="video" src="video.png">    
+  </section>
+
+  <section id="coaching">
+    <img src="Kundalini-Yoga.JPG" class="section-img" loading="lazy">
+    <div class="color-section">
+      <h3>COACHING</h3>
+      <p>Körperarbeit und Emotional Relase</p>
+      <button>erfahre mehr ...</button>
     </div>
-  </div>
+  </section>
 
-
-  <div id="yoga">
-      <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-12">
-          <h2 class="display-5 fw-bold lh-1 mb-3">Yoga</h2>
-          <h3 class="text-muted fw-bold lh-2 mb-3">Kundalini Yoga – eine Reise zu Dir selbst</h3>
-          <img src="Kundalini Yoga 2.jpg" class="d-block mx-auto img-fluid" loading="lazy">
-          <p class="lead mt-3">
-            Kundalini Yoga ist jahrtausende alt. Viele spüren schon in ihrer ersten Yoga-Stunde etwas ganz Besonderes, das sie nicht mehr loslässt. Du findest innere Ruhe, Klarheit, Kraft und Freude. Es ist wie ein Nachhausekommen.<br>
-            Dich zu Hause fühlen bei Dir selbst – was kann es Schöneres geben?<br>
-            Energie durchströmt Deinen Körper, Blockaden können sich lösen, Deine Selbstheilung wird angeregt. <br>
-            Klingt toll? Ist es auch. Probiere es aus!<br>
-            Du findest zu Dir und entfaltest Dein volles Potential.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">zum Angebot</button>
-          </div>
-        </div>
-      </div>
+  <section id="yoga">
+    <img src="Kundalini Yoga 2.jpg" class="section-img" loading="lazy">
+    <div>
+      <h3>YOGA</h3>
+      <p>Kundalini Yoga – eine Reise zu Dir selbst</p>
+      <button>erfahre mehr ...</button>
     </div>
-  </div>
+  </section>
 
-
-  <div id="breathwalk">
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row align-items-center g-5 py-5">
-        <div class="col-12">
-          <h2 class="display-5 fw-bold lh-1 mb-3">Breathwalk<sup>®</sup></h2>
-          <img src="Breathwalk-2.JPG" class="d-block mx-auto img-fluid" loading="lazy">
-          <p class="lead mt-3">
-            Breathwalk<sup>®</sup> ist eine sanfte, wirkungsvolle Methode, die das Gehen, Atemtechniken und Yoga verbindet. An der frischen Luft ausgeführt wirkt es belebend auf den ganzen Körper. Es löst Blockaden, macht flexibler und geschmeidiger, setzt Energien frei. Und ist ganz leicht im Alltag umsetzbar.<br>
-            Vor allem macht es gute Laune, entspannt, vitalisiert und schafft Klarheit.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">zum Angebot</button>
-          </div>
-        </div>
-      </div>
+    <section id="meditation">
+    <img src="Meditation.JPG" class="section-img" loading="lazy">
+    <div class="color-section">
+      <h3>MEDITATION</h3>
+      <p>Sie möchten sich entspannen – wissen aber nicht wie?</p>
+      <button>erfahre mehr ...</button>
     </div>
-  </div>
- 
+  </section>
 
-  <div id="meditation">
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-12">
-          <h2 class="display-5 fw-bold lh-1 mb-3">Meditation</h2>
-          <h3 class="text-muted fw-bold lh-2 mb-3">Sie möchten sich entspannen – wissen aber nicht wie?</h3>
-          <img src="Meditation.JPG" class="d-block mx-auto img-fluid" loading="lazy">
-          <p class="lead mt-3">
-            Was Urvölker längst wussten haben auch wissenschaftliche Studien zur Wirkung von Meditation dokumentiert: Meditation ist gut für die körperliche und psychische Gesundheit, für Zufriedenheit und Wohlbefinden.<br>
-            Jede*r entspannt sich anders – finden Sie mit mir IHREN Weg zur ENT-spannung.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">zum Angebot</button>
-          </div>
-        </div>
-      </div>
+  <section id="aufrichtung">
+    <img src="Aufrichtung.JPG" class="section-img" loading="lazy">
+    <div>
+      <h3>AUFRICHTUNG</h3>
+      <p>Die Aufrichtung ist eine sofort sichtbare, dauerhafte und erfolgreiche
+geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</p>
+      <button>erfahre mehr ...</button>
     </div>
-  </div>
+  </section>
 
 
-  <div id="aufrichtung">
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-12">
-          <h2 class="display-5 fw-bold lh-1 mb-3">Aufrichtung</h2>
-          <img src="Aufrichtung.JPG" class="d-block mx-auto img-fluid" alt="Aufrichtung" loading="lazy">
-          <p class="lead mt-3">
-            Die Aufrichtung ist eine sofort sichtbare, dauerhafte und erfolgreiche geistige Heilung – ohne Risiko und ohne Nebenwirkungen!<br>
-            Erlebnisse, Gedanken und Unfälle sorgen für gesundheitliche Probleme. Eine Aufrichtung hilft unter anderem bei Gelenkbeschwerden, Migräne, Organerkrankungen, Rückenschmerzen, Skoliosen und Verspannungen.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">zum Angebot</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <div id="about">
