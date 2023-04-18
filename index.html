@@ -6,11 +6,43 @@
     <title>Lebe Dein Satnam</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   	<style type="text/css">
+
+      /* definition */
+      @font-face {
+        font-family: Montserrat;
+        src: url('Montserrat-Regular.ttf');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: Montserrat;
+        src: url('Montserrat-Bold.ttf');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: aAndragogy;
+        src: url('aAndragogy.ttf');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* use */
+      body {
+          font-family: Montserrat, sans-serif;
+          background-color: lightgray;
+          position: relative;
+      }
+
       .xxl {
         max-width: 1320px;
         background-color: white;
         margin: auto;
       }
+
+
       nav {
         width:100%;
         height: 80px;
@@ -26,6 +58,7 @@
       .nav-link.active {
         color: white;
         text-decoration: underline;
+        font-weight: bold;
       }
 
   		#intro, #motivation, section div {
@@ -35,52 +68,91 @@
         justify-content: center;
       }
 
+
       #intro{
         color:white;
   			background-image: url("earth.jpg");
 			  /* Full height */
 			  height: calc(100vh - 80px);
 			  /* Center and scale the image nicely*/
-        max-height: 1024px;
+        max-height: 650px;
 			  background-position: center;
 			  background-repeat: no-repeat;
 			  background-size: cover;
         /*padding: 10rem 0;*/
   		}
 
-      #intro *, #motivation * {
-        text-align: center;
-        margin: 1rem 0rem;
-
+     #brand{
+        width: 100px;
       }
 
-      #intro img {
+     #intro img {
         /*height: 5rem;*/
         width: 15rem;
       }
 
-      #video {
-        width: 50%;
+      #motivation {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
       }
 
-  		body{
-  			background-color: lightgray;
-  			position: relative;
-  		}
+      #video {
+        width: 350px;
+      }
+
+      h1, h2, h3, h4, p, ul {
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+      }
+
+      .left *{        
+        text-align: left;
+      }
+
+      h1,h3 {
+        font-weight: bold;
+      }
+
+      h1{
+        font-size: 3rem;
+      }
+
+      h2 {
+          font-family: aAndragogy, cursive;
+          font-size: 4rem;
+      }
+
+      h3{
+        font-size: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .color{
+        color: #b4045c;
+      }
 
   		.container-xxl{
   			background-color: white;	
   		}
 
-  		#brand{
-  			width: 100px;
-  		}
+      section div {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
 
       .section-img{
         width:100%;
-        background-position: center;
+        /*background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;       
+        background-size: cover;       */
       }
 
       .color-section {
@@ -88,16 +160,79 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 1rem;
         color: white;
       }
 
       section div button {
-        border-radius: 10px;
-        color: white;
-        background-color: lightgray;
-        padding: .5rem;
+        border-radius: 30px;
+        border-style: solid;
+        border-color: #b4045c;
+        color: #b4045c;
+        background-color: white;
+        padding: .5rem 1.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
       }
+
+      #about {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;      
+      }
+
+      #about img{
+        width: 320px;
+      }
+
+      #about div {
+        flex-basis:500px;
+        flex-grow: 4;
+        align-items: flex-start;
+      }
+
+      #about div p {
+        text-align: left;
+      }
+
+      ul{
+        list-style: none;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      li{
+
+      }
+
+      li span {
+        display: inline-block;
+        width: 3rem;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+      }
+
+      footer div{
+        flex-grow: 1;
+        flex-basis: auto;        
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+        text-align: left;
+      }
+
   	</style>
   </head>
 
@@ -143,11 +278,12 @@
     <h1>COACHING & BODYWORK </h1>
     <h2>Light your Life</h2>    
   </div>  
+
   <main>
 
   <section class="" id="motivation">
-    <h3>Du bist wertvoll!</h3>
-    <h4>Lebe deine Bestimmung - Lebe dein Satnam</h4>
+    <h1 class="color">Du bist wertvoll!</h3>
+    <h2 class="color">Lebe deine Bestimmung - Lebe dein Satnam</h4>
     <p>Die feinste Essenz an Methoden wartet darauf, Dich zum LEUCHTEN & in DIE
 FREUDE zu bringen – Dich zu befreien von allem was nicht zu Dir gehört!
 Ich freue mich schon jetzt riesig darauf, Dich auf Deiner Reise zu Dir selbst, zu
@@ -160,7 +296,7 @@ Deiner wahren Essenz – zu Deinem SATNAM zu begleiten.</p>
     <img src="Kundalini-Yoga.JPG" class="section-img" loading="lazy">
     <div class="color-section">
       <h3>COACHING</h3>
-      <p>Körperarbeit und Emotional Relase</p>
+      <h4>Körperarbeit und Emotional Relase</h4>
       <button>erfahre mehr ...</button>
     </div>
   </section>
@@ -168,8 +304,8 @@ Deiner wahren Essenz – zu Deinem SATNAM zu begleiten.</p>
   <section id="yoga">
     <img src="Kundalini Yoga 2.jpg" class="section-img" loading="lazy">
     <div>
-      <h3>YOGA</h3>
-      <p>Kundalini Yoga – eine Reise zu Dir selbst</p>
+      <h3 class="color">YOGA</h3>
+      <h4>Kundalini Yoga – eine Reise zu Dir selbst</h4>
       <button>erfahre mehr ...</button>
     </div>
   </section>
@@ -178,7 +314,7 @@ Deiner wahren Essenz – zu Deinem SATNAM zu begleiten.</p>
     <img src="Meditation.JPG" class="section-img" loading="lazy">
     <div class="color-section">
       <h3>MEDITATION</h3>
-      <p>Sie möchten sich entspannen – wissen aber nicht wie?</p>
+      <h4>Sie möchten sich entspannen – wissen aber nicht wie?</h4>
       <button>erfahre mehr ...</button>
     </div>
   </section>
@@ -186,62 +322,68 @@ Deiner wahren Essenz – zu Deinem SATNAM zu begleiten.</p>
   <section id="aufrichtung">
     <img src="Aufrichtung.JPG" class="section-img" loading="lazy">
     <div>
-      <h3>AUFRICHTUNG</h3>
-      <p>Die Aufrichtung ist eine sofort sichtbare, dauerhafte und erfolgreiche
-geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</p>
+      <h3 class="color">AUFRICHTUNG</h3>
+      <h4>Die Aufrichtung ist eine sofort sichtbare, dauerhafte und erfolgreiche
+geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
       <button>erfahre mehr ...</button>
     </div>
   </section>
 
-
-
-
-  <div id="about">
-      <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row align-items-center g-5 py-5">
-        <div class="col-12">
-          <h3 class="display-5 fw-bold lh-1 mb-3">Über mich</h2>
-          <img src="About-1-groс.JPG" class="d-block mx-auto img-fluid" loading="lazy">
-          <p class="lead mt-3">
-            Ich wollte schon immer wissen, wie alles miteinander zusammenhängt und bin dafür weit gereist, habe viel studiert und bin am Ende bei mir selbst angekommen. Eine Reise zu mir.<br>
-            Schon während meiner Schulzeit zog es mich hinaus in die Welt und ich erkundete ein Jahr lang Norwegen, die Sprache, die Menschen und die Kultur. Ich studierte schließlich Dolmetschen und verbrachte viel Zeit in Russland und England. Mein erstes Geld verdiente ich als Nachhilfe-Lehrerin für Sprachen und Biologie, später als Deutsch-Lehrerin am King’s College London sowie als selbstständige Dolmetscherin und Übersetzerin. Ich analysierte als Unternehmensberaterin in- und ausländische Märkte und arbeitete einige Jahre für ein Technologie-Startup im Marketing. Währenddessen studierte ich weiter, machte unterschiedliche Abschlüsse und sammelte Erfahrungen.<br>
-            Mit den Geburten meiner wundervollen Töchter wurde ich selbst auch irgendwie neu geboren. Ein Umzug löste in mir eine Krise aus und ich musste neue Wege probieren, Gewohntes verlassen. Ich testete Yoga, Meditation, Schamanismus, Energie- und Aufstellungsarbeit und meine Reise ging ab nun sehr tief in MEIN INNERES.<br>
-            2014 kam ich in Kontakt mit Kundalini Yoga, Bonding-Körperarbeit und Somatic Experience - ich war einfach überwältigt davon, wie schön, leicht und bewusst mein Leben sein kann. Es folgten rasante Transformationsprozesse, Erleichterung und tiefe Heilung, für die ich unendlich dankbar bin.<br>
-            Für das, was mir so effizient geholfen hat, ließ ich mich ausbilden und habe als Begleiterin meine Berufung gefunden.<br>
-            Es ist mir eine Freude und ich bin zutiefst dankbar, Menschen auf ihrem Weg zu sich selbst und zu innerem Frieden zu begleiten. Ich liebe es, nach der Arbeit offene Herzen, Licht- und Freudestrahlen zu erleben. Wundervolle Potentiale die sich dabei entfalten und wieder zu leben beginnen dürfen.<br>
-            Meine Talente habe ich auch wiederentdeckt, sie fließen in meine Arbeit mit ein. Ich male Energiebilder, singe und musiziere leidenschaftlich gerne.<br>
-            Ich freue mich sehr auf Sie! Schreiben Sie mir oder rufen Sie mich an für ein Kennenlernen.<br>  
-          </p>
-          <p class="lead">
-            Meine Ausbildungen
-            <ul>
-              <li>2022 - Hanka Sant Want Kaur /Taunus – Breathwalk<sup>®</sup> Instructor</li>
-              <li>2022 - DISA Dresden, Ralf Lemke - Körpertherapie</li>
-              <li>2022 - Satya Singh Hamburg - Yoga- und Seelenreise-Coach </li>
-              <li>2021 - 3HO München - zertifizierte Kundalini-Yoga-Lehrerin</li>
-              <li>2021 - Siegmund Schreiber/Vaduz (Liechtenstein) - Heilerin für die Aufrichtung</li>
-              <li>2016 - Handelshochschule Leipzig – General Management (MBA)</li>
-              <li>2009 - Universität Leipzig - Dolm. für Englisch & Russisch (Diplom)</li>
-              <li>2006 - Universität Leipzig - Deutsch als Fremdsprache (Magister)</li>
-            </ul>
-          </p>
-        </div>
-      </div>
+  <section id="about" class="color-section">
+    <img src="about.jpg"  loading="lazy">
+    <div class="left">
+      <h3>ÜBER MICH</h3>
+      <p>
+            Ich wollte schon immer wissen, wie alles miteinander zusammenhängt und bin dafür weit gereist, habe viel studiert und bin am Ende bei mir selbst angekommen. Eine Reise zu mir.
+      </p><p>
+            Schon während meiner Schulzeit zog es mich hinaus in die Welt und ich erkundete ein Jahr lang Norwegen, die Sprache, die Menschen und die Kultur. Ich studierte schließlich Dolmetschen und verbrachte viel Zeit in Russland und England. Mein erstes Geld verdiente ich als Nachhilfe-Lehrerin für Sprachen und Biologie, später als Deutsch-Lehrerin am King’s College London sowie als selbstständige Dolmetscherin und Übersetzerin. Ich analysierte als Unternehmensberaterin in- und ausländische Märkte und arbeitete einige Jahre für ein Technologie-Startup im Marketing. Währenddessen studierte ich weiter, machte unterschiedliche Abschlüsse und sammelte Erfahrungen.
+      </p><p>
+            Mit den Geburten meiner wundervollen Töchter wurde ich selbst auch irgendwie neu geboren. Ein Umzug löste in mir eine Krise aus und ich musste neue Wege probieren, Gewohntes verlassen. Ich testete Yoga, Meditation, Schamanismus, Energie- und Aufstellungsarbeit und meine Reise ging ab nun sehr tief in MEIN INNERES.
+      </p><p>
+            2014 kam ich in Kontakt mit Kundalini Yoga, Bonding-Körperarbeit und Somatic Experience - ich war einfach überwältigt davon, wie schön, leicht und bewusst mein Leben sein kann. Es folgten rasante Transformationsprozesse, Erleichterung und tiefe Heilung, für die ich unendlich dankbar bin.
+      </p><p>
+            Für das, was mir so effizient geholfen hat, ließ ich mich ausbilden und habe als Begleiterin meine Berufung gefunden.
+      </p><p>
+            Es ist mir eine Freude und ich bin zutiefst dankbar, Menschen auf ihrem Weg zu sich selbst und zu innerem Frieden zu begleiten. Ich liebe es, nach der Arbeit offene Herzen, Licht- und Freudestrahlen zu erleben. Wundervolle Potentiale die sich dabei entfalten und wieder zu leben beginnen dürfen.
+      </p><p>
+            Meine Talente habe ich auch wiederentdeckt, sie fließen in meine Arbeit mit ein. Ich male Energiebilder, singe und musiziere leidenschaftlich gerne.
+      </p><p>
+            Ich freue mich sehr auf Sie! Schreiben Sie mir oder rufen Sie mich an für ein Kennenlernen.
+      </p><p>
+            <h2>Franziska Scharfe</h2>
+      </p>
     </div>
-  </div>
+  </section>
+
+
+  <section id="ausbildungen">
+    <div class="left">
+      <h3 class="color">MEINE AUSBILDUNGEN</h3>
+      <ul>
+          <li><span>2022</span> | Hanka Sant Want Kaur /Taunus – Breathwalk<sup>®</sup> Instructor</li>
+          <li><span>2022</span> | DISA Dresden, Ralf Lemke - Körpertherapie</li>
+          <li><span>2022</span> | Satya Singh Hamburg - Yoga- und Seelenreise-Coach </li>
+          <li><span>2021</span> | 3HO München - zertifizierte Kundalini-Yoga-Lehrerin</li>
+          <li><span>2021</span> | Siegmund Schreiber/Vaduz (Liechtenstein) - Heilerin für die Aufrichtung</li>
+          <li><span>2016</span> | Handelshochschule Leipzig – General Management (MBA)</li>
+          <li><span>2009</span> | Universität Leipzig - Dolm. für Englisch & Russisch (Diplom)</li>
+          <li><span>2006</span> | Universität Leipzig - Deutsch als Fremdsprache (Magister)</li>
+      </ul>
+    </div>
+  </section>
 
   </main>
 
-  <footer class="py-5 bg-light align-items-center">
-    <div class="col col-lg-4">
-      <img class="d-block mx-auto img-fluid" src="franziska.png"> 
-    </div>
-    <div class="col" > 
-      <h4>Franziska Sita Amandev Kaur Scharfe</h4>
-      <p class="lead">
-        Tel.: <a href="tel:+491794774459">0179-4774459</a><br> 
-        E-Mail: <a href="mailto:info@lebe-dein-satnam.de">info@lebe-dein-satnam.de</a>
+  <footer class="color-section">
+    <div class="left"> 
+      <h3>KONTAKT</h3>
+      <p>Franziska Sita Amandev Kaur Scharfe<br>
+        <a href="tel:+491794774459">0179-4774459</a><br> 
+        <a href="mailto:info@lebe-dein-satnam.de">info@lebe-dein-satnam.de</a>
       </p>
+     </div>
+     <div class="left">
+       Impressum|Datenschutz
      </div>
   </footer>
 </div>
