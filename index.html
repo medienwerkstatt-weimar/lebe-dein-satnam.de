@@ -48,22 +48,42 @@
 
 
       nav {
+        position: sticky;
+        top: 0;
         width:100%;
-        height: 80px;
+        /*height: 80px;*/
         background-image: url("background.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap:1rem;
+
         
       }
       .nav-link {
         color: white;
+        white-space: nowrap;
       }
-      .nav-link.active {
+      .active {
         color: white;
         text-decoration: underline;
-        font-weight: bold;
       }
+
+       /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+        @media screen and (max-width: 720px) {
+          nav {
+            flex-direction: column;
+          }
+          nav a:not(:first-child) {display: none;}
+          nav.visible a {
+             display:block;
+          }
+        }
+
 
   		#intro, #motivation, section div {
         display: flex;
@@ -88,6 +108,7 @@
 
      #brand{
         width: 100px;
+        flex-shrink: 0;
       }
 
      #intro img {
@@ -244,41 +265,19 @@
   	</style>
   </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
+<body>
 <div class="xxl">
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">  
-	 <div class="container-fluid">
-	    <a href="#"><img id="brand" src="Logo_Icon_weiss.png" alt="Satnam"></a>
-	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-list" aria-controls="navbar-list" aria-expanded="false" aria-label="Toggle navigation">
-	      <span class="navbar-toggler-icon"></span>
-	    </button>
-	    <div class="collapse navbar-collapse" id="navbar-list">
-	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#coaching">Coaching</a>
-          </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#yoga">Yoga</a>
-	        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#meditation">Meditation</a>
-          </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#aufrichtung">Aufrichtung</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#about">Über mich</a>
-	        </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#news">Aktuelles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Kontakt</a>
-          </li>
-	      </ul>
-	    </div>
-	   </div>
-	 </nav>
+  <nav id="navbar">  
+	    <a href="javascript:void(0);" onclick="toggleNav()"><img id="brand" src="Logo_Icon_weiss.png" alt="Satnam"></a>
+      <a class="nav-link" onclick="toggleNav()" href="#">Home</a>
+      <a class="nav-link" onclick="toggleNav()" href="#coaching">Coaching</a>
+      <a class="nav-link" onclick="toggleNav()" href="#yoga">Yoga</a>
+      <a class="nav-link" onclick="toggleNav()" href="#meditation">Meditation</a>
+      <a class="nav-link" onclick="toggleNav()" href="#aufrichtung">Aufrichtung</a>
+      <a class="nav-link" onclick="toggleNav()" href="#about">Über mich</a>
+      <a class="nav-link" onclick="toggleNav()" href="#contact">Kontakt</a>
+  </nav>
+
 
 
   <div class="" id="intro">
@@ -383,7 +382,7 @@ geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
   </main>
 
   <footer class="color-section">
-    <div class="left"> 
+    <div id="contact" class="left"> 
       <h3>KONTAKT</h3>
       <p>Franziska Sita Amandev Kaur Scharfe<br>
         <a href="tel:+491794774459">0179-4774459</a><br> 
@@ -396,5 +395,42 @@ geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
   </footer>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  function toggleNav() {
+    console.log("in toggleNav")
+    var x = document.getElementById("navbar");
+    if (x.className === "visible") {
+      x.className = "";
+    } else {
+      x.className = "visible";
+    }
+  } 
+
+  let menuSection = document.querySelectorAll('nav a');
+  /*
+  // for clickable event
+  menuSection.forEach(v=> {
+    v.onclick = (()=> {
+     setTimeout(()=> {
+        menuSection.forEach(j=> j.classList.remove('active'))
+      v.classList.add('active')
+    },300)
+     })
+  })*/
+
+  // for window scrolldown event
+
+  window.onscroll = (()=> {
+    let mainSection = document.querySelectorAll('main section');
+
+    mainSection.forEach((v,i)=> {
+      let rect = v.getBoundingClientRect().y
+      if(rect < window.innerHeight+250){
+        menuSection.forEach(v=> v.classList.remove('active'))
+        menuSection[i].classList.add('active')
+      }
+    })
+  })
+</script>
 </body>
 </html>
