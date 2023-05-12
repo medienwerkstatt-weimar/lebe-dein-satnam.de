@@ -64,12 +64,11 @@
 
         
       }
-      .nav-link {
+      .nav-link, .nav-link:hover, .nav-link:visited {
         color: white;
         white-space: nowrap;
       }
       .active {
-        color: white;
         text-decoration: underline;
       }
 
@@ -447,7 +446,7 @@ geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
 
     mainSection.forEach((v,i)=> {
       let rect = v.getBoundingClientRect().y
-      if(rect < window.innerHeight+250){
+      if(rect < window.innerHeight+500){
         menuSection.forEach(v=> v.classList.remove('active'))
         menuSection[i].classList.add('active')
       }
