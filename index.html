@@ -11,6 +11,10 @@
         font-size: calc(13px + 0.390625vw);
       }
 
+      a, a:hover, a:visited {
+        color: white;
+      }
+
       /* definition */
       @font-face {
         font-family: Montserrat;
@@ -52,7 +56,7 @@
         top: 0;
         width:100%;
         /*height: 80px;*/
-        background-image: url("background.jpg");
+        background-image: url("HGs_297x420mm-magenta.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -68,6 +72,8 @@
         color: white;
         white-space: nowrap;
       }
+
+
       .active {
         text-decoration: underline;
       }
@@ -192,7 +198,7 @@
       }
 
       .color-section {
-        background-image: url("background.jpg");
+        background-image: url("HGs_297x420mm-magenta.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -254,6 +260,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: flex-start;
+        margin-bottom: 80vh;
       }
 
       footer div{
@@ -281,13 +288,13 @@
 <div class="xxl">
   <nav id="navbar">  
 	    <a href="javascript:void(0);" onclick="toggleNav()"><img id="brand" src="Logo_Icon_weiss.png" alt="Satnam"></a>
-      <a class="nav-link" onclick="toggleNav()" href="#">Home</a>
-      <a class="nav-link" onclick="toggleNav()" href="#coaching">Coaching</a>
-      <a class="nav-link" onclick="toggleNav()" href="#yoga">Yoga</a>
-      <a class="nav-link" onclick="toggleNav()" href="#meditation">Meditation</a>
-      <a class="nav-link" onclick="toggleNav()" href="#aufrichtung">Aufrichtung</a>
-      <a class="nav-link" onclick="toggleNav()" href="#about">Über mich</a>
-      <a class="nav-link" onclick="toggleNav()" href="#contact">Kontakt</a>
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#coaching">Coachings</a>
+      <a class="nav-link" href="#yoga">Yoga</a>
+      <a class="nav-link" href="#meditation">Meditation</a>
+      <a class="nav-link" href="#aufrichtung">Aufrichtung</a>
+      <a class="nav-link" href="#about">Über mich</a>
+      <a class="nav-link" href="#contact">Kontakt</a>
   </nav>
 
 
@@ -301,22 +308,18 @@
   <main>
 
   <section class="" id="motivation">
-    <h1 class="color">Du bist wertvoll!</h3>
-    <h2 class="color">Lebe deine Bestimmung - Lebe dein Satnam</h4>
-    <p>Die feinste Essenz an Methoden wartet darauf, Dich zum LEUCHTEN & in DIE
-FREUDE zu bringen – Dich zu befreien von allem was nicht zu Dir gehört!
-Ich freue mich schon jetzt riesig darauf, Dich auf Deiner Reise zu Dir selbst, zu
-Deiner wahren Essenz – zu Deinem SATNAM zu begleiten.</p>
-    <p>SATNAM (Sanskr.) – wahre Bestimmung.</p>
+    <h1 class="color">DU bist wichtig!</h3>
+    <!--<h2 class="color">Lebe deine Bestimmung - Lebe dein Satnam</h4>-->
+    <p>Ich begleite Dich auf Deinem Weg zu Deinem höchsten Potential, zu Deiner Lebenskraft und zum Glauben an Dich selbst.</p>
     <img id="video" src="video.png">    
   </section>
 
   <section id="coaching">
     <img src="Kundalini-Yoga_1320x880px.jpg" class="section-img" loading="lazy">
     <div class="color-section">
-      <h3>COACHING</h3>
-      <h4>Körperarbeit und Emotional Relase</h4>
-      <button>erfahre mehr ...</button>
+      <h3>COACHINGS</h3>
+      <h4>In meinen Coachings begleite ich Dich über mehrere Wochen - ganzheitlich, alltagsnah und integral.</h4>
+      <button>Mehr erfahren</button>
     </div>
   </section>
 
@@ -324,8 +327,8 @@ Deiner wahren Essenz – zu Deinem SATNAM zu begleiten.</p>
     <img src="yoga_1320x990px.jpg" class="section-img" loading="lazy">
     <div>
       <h3 class="color">YOGA</h3>
-      <h4>Kundalini Yoga – eine Reise zu Dir selbst</h4>
-      <button>erfahre mehr ...</button>
+      <h4>Mein Unterricht ermöglicht Dir Ausrichtung und Stärkung - körperlich, energetisch & achtsam.</h4>
+      <button>Mehr erfahren</button>
     </div>
   </section>
 
@@ -333,8 +336,8 @@ Deiner wahren Essenz – zu Deinem SATNAM zu begleiten.</p>
     <img src="Meditation_1320x880px.jpg" class="section-img" loading="lazy">
     <div class="color-section">
       <h3>MEDITATION</h3>
-      <h4>Sie möchten sich entspannen – wissen aber nicht wie?</h4>
-      <button>erfahre mehr ...</button>
+      <h4>Gemeinsam finden wir Deinen individuellen Weg Ruhe, Kraft und Wohlbefinden.</h4>
+      <button>Mehr erfahren</button>
     </div>
   </section>
 
@@ -342,9 +345,8 @@ Deiner wahren Essenz – zu Deinem SATNAM zu begleiten.</p>
     <img src="Aufrichtung_1320x880px.jpg" class="section-img" loading="lazy">
     <div>
       <h3 class="color">AUFRICHTUNG</h3>
-      <h4>Die Aufrichtung ist eine sofort sichtbare, dauerhafte und erfolgreiche
-geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
-      <button>erfahre mehr ...</button>
+      <h4>Eine Aufrichtung kann wahre Wunder bewirken - bei Gelenkbeschwerden, Migräne, Organerkrankungen, Rückenschmerzen, Skoliosen und Verspannungen.</h4>
+      <button>Mehr erfahren</button>
     </div>
   </section>
 
@@ -353,21 +355,21 @@ geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
     <div class="left">
       <h3>ÜBER MICH</h3>
       <p>
-            Ich wollte schon immer wissen, wie alles miteinander zusammenhängt und bin dafür weit gereist, habe viel studiert und bin am Ende bei mir selbst angekommen. Eine Reise zu mir.
+            Ich wollte schon immer wissen, wie alles miteinander zusammenhängt und bin dafür weit gereist, habe viel studiert und bin am Ende dann bei mir selbst gelandet. Eine Reise zu mir selbst.
       </p><p>
-            Schon während meiner Schulzeit zog es mich hinaus in die Welt und ich erkundete ein Jahr lang Norwegen, die Sprache, die Menschen und die Kultur. Ich studierte schließlich Dolmetschen und verbrachte viel Zeit in Russland und England. Mein erstes Geld verdiente ich als Nachhilfe-Lehrerin für Sprachen und Biologie, später als Deutsch-Lehrerin am King’s College London sowie als selbstständige Dolmetscherin und Übersetzerin. Ich analysierte als Unternehmensberaterin in- und ausländische Märkte und arbeitete einige Jahre für ein Technologie-Startup im Marketing. Währenddessen studierte ich weiter, machte unterschiedliche Abschlüsse und sammelte Erfahrungen.
+            Schon in der Schulzeit zog es mich hinaus und ich erkundete ein Jahr lang Norwegen, fremde Menschen, eine neue Sprache und eine völlig andere Kultur. Ich studierte Dolmetschen und verbrachte viel Zeit in Russland und England. Mein erstes Geld verdiente ich als Nachhilfe-Lehrerin für Sprachen und Biologie, später als Deutsch-Lehrerin am King’s College London sowie als freiberufliche Dolmetscherin und Übersetzerin. Ich analysierte als Unternehmensberaterin in- und ausländische Märkte und arbeitete in einem Technologie-Startup im Marketing & Vertrieb. Währenddessen studierte ich weiter, an diversen Universitäten, das Leben, die Menschen, Bewegung, Tanz, Musik und mich selbst.
       </p><p>
-            Mit den Geburten meiner wundervollen Töchter wurde ich selbst auch irgendwie neu geboren. Ein Umzug löste in mir eine Krise aus und ich musste neue Wege probieren, Gewohntes verlassen. Ich testete Yoga, Meditation, Schamanismus, Energie- und Aufstellungsarbeit und meine Reise ging ab nun sehr tief in MEIN INNERES.
+            Mit den Geburten meiner wundervollen Töchter wurde ich dann auch selbst irgendwie neu geboren. Ein Umzug löste in mir eine Krise aus und ich probierte neue Wege, verließ gewohnte Pfade. Ich testete unterschiedliche konventionelle und alternative Heiltraditionen und meine Reise ging ab nun tief in mein Inneres.
       </p><p>
-            2014 kam ich in Kontakt mit Kundalini Yoga, Bonding-Körperarbeit und Somatic Experience - ich war einfach überwältigt davon, wie schön, leicht und bewusst mein Leben sein kann. Es folgten rasante Transformationsprozesse, Erleichterung und tiefe Heilung, für die ich unendlich dankbar bin.
+            Das tatsächliche Auflösen von Blockaden gelang mir ziemlich überraschend mit der Einbeziehung meines Körpers und Nervensystems. 2014 kam ich in Kontakt mit emotionaler Körperarbeit - und war überwältigt davon, wie schön, leicht und bewusst mein Leben sein konnte. Bereits nach einer einzigen Session fühlte ich mich so viel leichter und freier. Es war plötzlich ganz still in mir geworden, als hätte ein Wasserfall neben mir plötzlich aufgehört zu rauschen. Ruhe. Ah. Wow. Das war es wonach ich gesucht hatte, ich hatte meine Berufung gefunden.
       </p><p>
-            Für das, was mir so effizient geholfen hat, ließ ich mich ausbilden und habe als Begleiterin meine Berufung gefunden.
+            Der Weg führte mich weiter und ich erfuhr in kurzer Zeit tiefe Transformation, Erleichterung und fand den Zugang zu meinem inneren Kompass wieder, der mich jetzt freud- und kraftvoll durch mein Leben navigiert.
       </p><p>
-            Es ist mir eine Freude und ich bin zutiefst dankbar, Menschen auf ihrem Weg zu sich selbst und zu innerem Frieden zu begleiten. Ich liebe es, nach der Arbeit offene Herzen, Licht- und Freudestrahlen zu erleben. Wundervolle Potentiale die sich dabei entfalten und wieder zu leben beginnen dürfen.
+            In tiefer Dankbarkeit für diese tiefgreifenden und heilsamen Gesetze, Wahrheiten und Techniken bin ich nun hier, um auch DIR damit zu dienen.
       </p><p>
-            Meine Talente habe ich auch wiederentdeckt, sie fließen in meine Arbeit mit ein. Ich male Energiebilder, singe und musiziere leidenschaftlich gerne.
+            Ich freue mich sehr auf Dich!
       </p><p>
-            Ich freue mich sehr auf Sie! Schreiben Sie mir oder rufen Sie mich an für ein Kennenlernen.
+            Ruf mich gerne an für ein Erstgespräch: <a href="tel:+491794774459">0179-4774459</a>
       </p><p>
             <h2>Franziska Scharfe</h2>
       </p>
@@ -379,14 +381,15 @@ geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
     <div class="left">
       <h3 class="color">MEINE AUSBILDUNGEN</h3>
       <ul>
-          <li><span>2022 |</span> Hanka Sant Want Kaur /Taunus – Breathwalk<sup>®</sup> Instructor</li>
-          <li><span>2022 |</span> DISA Dresden, Ralf Lemke - Körpertherapie</li>
-          <li><span>2022 |</span> Satya Singh Hamburg - Yoga- und Seelenreise-Coach </li>
-          <li><span>2021 |</span> 3HO München - zertifizierte Kundalini-Yoga-Lehrerin</li>
-          <li><span>2021 |</span> Siegmund Schreiber/Vaduz (Liechtenstein) - Heilerin für die Aufrichtung</li>
-          <li><span>2016 |</span> Handelshochschule Leipzig – General Management (MBA)</li>
-          <li><span>2009 |</span> Universität Leipzig - Dolm. für Englisch & Russisch (Diplom)</li>
-          <li><span>2006 |</span> Universität Leipzig - Deutsch als Fremdsprache (Magister)</li>
+          <li><span>2022 </span> Neo Emotional Release (David Manning)</li>
+          <li><span>2022 </span> Breathwalk<sup>®</sup> Instructor (Hanka Sant Want Kaur)</li>
+          <li><span>2022 </span> Emotionale Körpertherapeutin (DISA, Dresden)</li>
+          <li><span>2022 </span> Yoga- und Seelenreise-Coach (Satya Singh, Hamburg)</li>
+          <li><span>2021 </span> Kundalini Yoga-Lehrerin (Satya Singh, 3HO München & Hamburg)</li>
+          <li><span>2021 </span> Heilerin für die Aufrichtung (Siegmund Schreiber, Vaduz/Liechtenstein)</li>
+          <li><span>2016 </span> General Management (MBA, HHL Handelshochschule Leipzig)</li>
+          <li><span>2009 </span> Dolmetscher für Englisch & Russisch (Diplom, Universität Leipzig)</li>
+          <li><span>2006 </span> Deutsch als Fremdsprache (Magister, Universität Leipzig)</li>
       </ul>
     </div>
   </section>
@@ -396,18 +399,17 @@ geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
   <footer class="color-section">
     <div id="contact" class="left"> 
       <h3>KONTAKT</h3>
-      <p>Franziska Sita Amandev Kaur Scharfe<br>
-        <a href="tel:+491794774459">0179-4774459</a><br> 
-        <a href="mailto:info@lebe-dein-satnam.de">info@lebe-dein-satnam.de</a>
+      <p>Franziska Scharfe<br>
+        <a href="tel:+491794774459">+49-179-4774459</a><br> 
+        <a href="mailto:mail@franziska-scharfe.de">mail@franziska-scharfe.de</a>
       </p>
      </div>
      <div class="left">
         <p>
-          <img class="sm-icon" src="icons8-facebook-neu_weiss.svg">
           <img class="sm-icon" src="icons8-instagram_weiss.svg">
+          <img class="sm-icon" src="icons8-facebook-neu_weiss.svg">
           <img class="sm-icon" src="icons8-telegramm-app_weiss.svg">
           <img class="sm-icon" src="icons8-whatsapp_weiss.svg">
-          <img class="sm-icon" src="icons8-youtube_weiss.svg">
         </p>
         <p>
          Impressum | Datenschutz
@@ -419,11 +421,11 @@ geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
 <script type="text/javascript">
   function toggleNav() {
     console.log("in toggleNav")
-    var x = document.getElementById("navbar");
-    if (x.className === "visible") {
-      x.className = "";
+    let navbar = document.getElementById("navbar");
+    if (navbar.className === "visible") {
+      navbar.className = "";
     } else {
-      x.className = "visible";
+      navbar.className = "visible";
     }
   } 
 
@@ -442,8 +444,13 @@ geistige Heilung – ohne Risiko und ohne Nebenwirkungen!</h4>
   // for window scrolldown event
 
   window.onscroll = (()=> {
-    let mainSection = document.querySelectorAll('main section');
+    //hide navbar when mobile.
+    let navbar = document.getElementById("navbar");
+    if (navbar.className === "visible") {navbar.className = "";}
 
+
+
+    let mainSection = document.querySelectorAll('main section');
     mainSection.forEach((v,i)=> {
       let rect = v.getBoundingClientRect().y
       if(rect < window.innerHeight+500){
