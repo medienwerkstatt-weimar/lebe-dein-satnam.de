@@ -3,306 +3,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lebe Dein Satnam</title>
+    <title>Franziska Scharfe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  	<style type="text/css">
-
-      html {
-        font-size: min(24px,calc(13px + 0.390625vw));
-      }
-
-      a, a:hover, a:visited {
-        color: white;
-      }
-
-      /* definition */
-      @font-face {
-        font-family: Montserrat;
-        src: url('Montserrat-Regular.ttf');
-        font-weight: normal;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: Montserrat;
-        src: url('Montserrat-Bold.ttf');
-        font-weight: bold;
-        font-style: normal;
-      }
-
-      @font-face {
-        font-family: aAndragogy;
-        src: url('aAndragogy.ttf');
-        font-weight: normal;
-        font-style: normal;
-      }
-
-      /* use */
-      body {
-          font-family: Montserrat, sans-serif;
-          background-color: lightgray;
-          position: relative;
-      }
-
-      .xxl {
-        max-width: 1320px;
-        background-color: white;
-        margin: auto;
-      }
-
-
-      nav {
-        position: absolute;
-        top: 0;
-        width:100%;
-        /*height: 80px;*/
-        background-image: url("HGs_297x420mm-magenta.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap:1rem;
-      }
-      .nav-link, .nav-link:hover, .nav-link:visited {
-        color: white;
-        white-space: nowrap;
-      }
-
-
-      .active {
-        text-decoration: underline;
-      }
-
-       /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-        @media screen and (max-width: 720px) {
-          nav {
-            
-            flex-direction: column;
-          }
-          nav a:not(:first-child) {display: none;}
-          nav.visible a {
-             display:block;
-          }
-
-          ul li span {
-            display: block;
-            margin-top: 1rem;
-          }
-        }
-
-
-  		#intro, #motivation, section div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-
-      #intro{
-        color:white;
-  			background-image: url("Header_1320x666px.jpg");
-			  /* Full height */
-			  height: 100vh;
-			  /* Center and scale the image nicely*/
-        max-height: 666px;
-			  background-position: center;
-			  background-repeat: no-repeat;
-			  background-size: cover;
-        /*padding: 10rem 0;*/
-        padding-top: 80px;
-  		}
-
-     #brand{
-        width: 100px;
-        flex-shrink: 0;
-      }
-
-     #intro img {
-        height: min(20vh, 150px);
-        /*width: 15rem;*/
-      }
-
-      #motivation {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-      }
-
-      #video {
-        width: 300px;
-      }
-
-      h1, h2, h3, h4, p, ul {
-        padding-left: 10%;
-        padding-right: 10%;
-        text-align: center;        
-      }
-
-      .left *{        
-        text-align: left;
-      }
-
-      h1,h3 {
-        font-weight: bold;
-        line-height: 1;
-      }
-
-      h1{
-        font-size: 2.5rem;
-        line-height: 1;
-      }
-
-      h2 {
-          font-family: aAndragogy, cursive;
-          font-size: 3rem;
-          line-height: 1;
-      }
-
-      h3{
-        font-size: 2rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      h4 {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      p, li {
-        font-size: 1rem;
-      }
-
-      .color{
-        color: #b4045c;
-      }
-
-  		.container-xxl{
-  			background-color: white;	
-  		}
-
-      section div {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-      }
-
-      .section-img{
-        width:100%;
-        /*background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;       */
-      }
-
-      .color-section {
-        background-image: url("HGs_297x420mm-magenta.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: white;
-      }
-
-      section div button {
-        border-radius: 30px;
-        border-style: solid;
-        border-color: #b4045c;
-        color: #b4045c;
-        background-color: white;
-        padding: .5rem 1.5rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        font-size: 1rem;
-      }
-
-      #about {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;      
-      }
-
-      #about img{
-        width: 300px;
-      }
-
-      #about div {
-        flex-basis:500px;
-        flex-grow: 4;
-        align-items: flex-start;
-      }
-
-      #about div p {
-        text-align: left;
-      }
-
-      ul{
-        list-style: none;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      li{
-
-      }
-
-      li span {
-        display: inline-block;
-        width: 4rem;
-      }
-
-      footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        align-content: flex-start;
-        min-height: 100vh;
-        
-      }
-
-      footer div{
-        flex-grow: 1;
-        flex-basis: auto;        
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-      }
-
-      footer a {
-        color: white;
-        text-decoration: none;
-        text-align: left;
-      }
-
-      footer .sm-icon {
-        width: 2rem;
-        margin: 0rem 1rem 0 0;
-      }
-
-  	</style>
+  	<link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
 <body>
 <div class="xxl">
   <nav class="xxl" id="navbar">  
-	    <a href="javascript:void(0);" onclick="toggleNav()"><img id="brand" src="Logo_Icon_weiss.png" alt="Satnam"></a>
-      <a class="nav-link" href="#intro">Home</a>
-      <a class="nav-link" href="#coaching">Coachings</a>
-      <a class="nav-link" href="#yoga">Yoga</a>
-      <a class="nav-link" href="#meditation">Meditation</a>
-      <a class="nav-link" href="#aufrichtung">Aufrichtung</a>
-      <a class="nav-link" href="#about">Über mich</a>
+        <a href="javascript:void(0);" onclick="toggleNav()"><img id="brand" src="Logo_Icon_weiss.png" alt="Satnam"></a>
+      <a class="nav-link active" href="index.html">Home</a>
+      <a class="nav-link" href="coachings.html">Coachings</a>
+      <a class="nav-link" href="yoga.html">Yoga</a>
+      <a class="nav-link" href="meditation.html">Meditation</a>
+      <a class="nav-link" href="aufrichtung.html">Aufrichtung</a>
+      <a class="nav-link" href="index.html#about">Über mich</a>
       <a class="nav-link" href="#contact">Kontakt</a>
   </nav>
 
 
 
   <div class="" id="intro">
-    <h2>Franziska Scharfe</h2>
+    <h2>Willkommen bei Franziska Scharfe</h2>
     <img src="Logo_Icon_weiss.png">
     <h1>COACHING & BODYWORK </h1>
     <h2>Light your Life</h2>    
@@ -311,10 +33,10 @@
   <main>
 
   <section class="" id="motivation">
-    <h1 class="color">DU bist wichtig!</h3>
-    <!--<h2 class="color">Lebe deine Bestimmung - Lebe dein Satnam</h4>-->
-    <p>Ich begleite Dich auf Deinem Weg zu Deinem höchsten Potential, zu Deiner Lebenskraft und zum Glauben an Dich selbst.</p>
-    <img id="video" src="video.png">    
+    <h1 class="color">Was findest Du hier?</h3>
+    <p>Ich begleite Dich auf Deinem Weg zu Deinem höchsten Potential, zu Deiner
+Lebenskraft und zum Glauben an Dich selbst.</p>
+   <!-- <img id="video" src="video.png"> -->
   </section>
 
   <section id="coaching">
@@ -322,7 +44,7 @@
     <div class="color-section">
       <h3>COACHINGS</h3>
       <h4>In meinen Coachings begleite ich Dich über mehrere Wochen - ganzheitlich, alltagsnah und integral.</h4>
-      <button>Mehr erfahren</button>
+      <button><a href="coachings.html">Mehr erfahren</a></button>
     </div>
   </section>
 
@@ -339,7 +61,7 @@
     <img src="Meditation_1320x880px.jpg" class="section-img" loading="lazy">
     <div class="color-section">
       <h3>MEDITATION</h3>
-      <h4>Gemeinsam finden wir Deinen individuellen Weg Ruhe, Kraft und Wohlbefinden.</h4>
+      <h4>Gemeinsam finden wir Deinen individuellen Weg zu Ruhe, Kraft und Wohlbefinden.</h4>
       <button>Mehr erfahren</button>
     </div>
   </section>
@@ -453,14 +175,14 @@
 
 
 
-    let mainSection = document.querySelectorAll('main section');
+   /* let mainSection = document.querySelectorAll('main section');
     mainSection.forEach((v,i)=> {
       let rect = v.getBoundingClientRect().y
       if(rect < window.innerHeight+500){
         menuSection.forEach(v=> v.classList.remove('active'))
         menuSection[i].classList.add('active')
       }
-    })
+    })*/
   })
 </script>
 </body>
