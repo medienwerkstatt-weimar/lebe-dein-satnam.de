@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franziska Scharfe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+<body>
+<div class="xxl">
+  <nav class="xxl" id="navbar">  
+        <a href="javascript:void(0);" onclick="toggleNav()"><img id="brand" src="Logo_Icon_weiss.png" alt="Satnam"></a>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="coachings.html">Coachings</a>
+      <a class="nav-link" href="yoga.html">Yoga</a>
+      <a class="nav-link" href="meditation.html">Meditation</a>
+      <a class="nav-link active" href="aufrichtung.html">Aufrichtung</a>
+      <a class="nav-link" href="index.html#about">Über mich</a>
+      <a class="nav-link" href="#contact">Kontakt</a>
+  </nav>
+
+
+  <main id="subpage">
+
+  <section>
+    <img src="Aufrichtung_1320x880px.jpg" class="section-img" loading="lazy">
+    <div>
+      <p>Erlebnisse, Gedanken und Unfälle sorgen für gesundheitliche Probleme. Eine Aufrichtung hilft unter anderem bei Gelenkbeschwerden, Migräne, Organerkrankungen, Rückenschmerzen, Skoliosen und Verspannungen.</p>
+      <h3 class="color">AUFRICHTUNG</h3>
+      <p>
+      Eine Aufrichtung kann bei Gelenkbeschwerden, Migräne, Organerkrankungen, Rückenschmerzen, Skoliosen und Verspannungen wahre Wunder bewirken. Denn alle wichtigen Steuerungen des menschlichen Körpers inkl. der Organversorgung befinden sich in der Wirbelsäule. Darüber hinaus gibt eine Aufrichtung wichtige Impulse für weitere Selbstheilungsprozesse.
+      </p>
+      <p>
+      Negative Einflüsse, Erfahrungen und Gedanken werden im Bewusstsein genauso wie im Unterbewusstsein gespeichert. Sie sorgen für Dysbalancen auf emotionaler, mentaler und physischer Ebene. Daneben stören sie das Gleichgewicht im Lebensstrom und verdrehen die Wirbelsäule. Die Folgen: Beckenschiefstand, emotionale Disharmonien und gestörte Organe.
+      </p>
+      <p>
+        Eine Aufrichtung wird nur 1 x im Leben durchgeführt.<br>
+        Eine Aufrichtung ist eine Heil-Initiation. Sie wird durch die Verbindung mit der universellen Kraft ermöglicht. Die aufgerichtete Wirbelsäule schafft die geistige und organische Balance, die für den Heilungsprozess notwendig ist. Die Aufrichtung wird nur ein einziges Mal durchgeführt. Die Wirkung bleibt und wurde von verschiedenen Ärzten bestätigt. Weltweit haben inzwischen über 500.000 Menschen das Wunder einer Aufrichtung erfahren. Überzeuge Dich selbst: Melde Dich noch heute für eine Aufrichtung an. 
+      </p>
+      <p>
+        Beckenschiefstand beeinflusst die Beinlänge.<br>
+        Alle Menschen haben ein schiefes Becken und dadurch unterschiedlich lange Beine. Je nach Belastung kann der Unterschied zwischen 0,5 und 2,5 Zentimeter betragen. Dieser Beckenschiefstand ist für viele Hüft- und Rückenprobleme verantwortlich. Vor jeder Aufrichtung und nach jeder Aufrichtung wird die Differenz begutachtet. Sie werden Augen machen! Termine für Aufrichtungen von Einzelpersonen und Kleingruppen können jederzeit direkt vereinbart werden. 
+      </p>
+      <p>
+        Deine Investition<br>
+        Aufrichtung Erwachsene: 150 EUR<br>
+        Aufrichtung Kinder bis 15 Jahre: 75 EUR<br>
+        Aufrichtung Tiere: 40 EUR
+      </p>
+      <p>
+        Lassen sich beide Eltern aufrichten, sind Kinder bis 15 Jahren gratis. Ein Teil des Honorars wird gespendet für Projekte die Franziska Scharfe unterstützt.
+      </p>
+      <p>Vereinbare gerne eine Aufrichtung per Anruf mit mir: 0179-4774459</p>
+    </div>
+  </section>
+  </main>
+
+  <footer class="color-section">
+    <div id="contact" class="left"> 
+      <h3>KONTAKT</h3>
+      <p>Franziska Scharfe<br>
+        <a href="tel:+491794774459">+49-179-4774459</a><br> 
+        <a href="mailto:mail@franziska-scharfe.de">mail@franziska-scharfe.de</a>
+      </p>
+     </div>
+     <div class="left">
+        <p>
+          <img class="sm-icon" src="icons8-instagram_weiss.svg">
+          <img class="sm-icon" src="icons8-facebook-neu_weiss.svg">
+          <img class="sm-icon" src="icons8-telegramm-app_weiss.svg">
+          <img class="sm-icon" src="icons8-whatsapp_weiss.svg">
+        </p>
+        <p>
+         Impressum | Datenschutz
+        </p>
+     </div>
+  </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  function toggleNav() {
+    console.log("in toggleNav")
+    let navbar = document.getElementById("navbar");
+    if (navbar.className === "visible") {
+      navbar.className = "";
+    } else {
+      navbar.className = "visible";
+    }
+  } 
+
+  let menuSection = document.querySelectorAll('nav a');
+  /*
+  // for clickable event
+  menuSection.forEach(v=> {
+    v.onclick = (()=> {
+     setTimeout(()=> {
+        menuSection.forEach(j=> j.classList.remove('active'))
+      v.classList.add('active')
+    },300)
+     })
+  })*/
+
+  // for window scrolldown event
+
+  window.onscroll = (()=> {
+    //hide navbar when mobile.
+    let navbar = document.getElementById("navbar");
+    if (navbar.className === "visible") {navbar.className = "";}
+
+
+
+   /* let mainSection = document.querySelectorAll('main section');
+    mainSection.forEach((v,i)=> {
+      let rect = v.getBoundingClientRect().y
+      if(rect < window.innerHeight+500){
+        menuSection.forEach(v=> v.classList.remove('active'))
+        menuSection[i].classList.add('active')
+      }
+    })*/
+  })
+</script>
+</body>
+</html>
